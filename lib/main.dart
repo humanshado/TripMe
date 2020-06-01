@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
         create: (context) => NavigationProvider(),
         child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'TripMe',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.grey,

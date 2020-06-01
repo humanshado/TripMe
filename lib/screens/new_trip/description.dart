@@ -41,7 +41,7 @@ class NewTripDescription extends StatelessWidget {
              mainAxisAlignment: MainAxisAlignment.spaceAround,
              children: <Widget>[
                RaisedButton(
-                 color: Colors.green,
+                 color: Colors.grey[600],
                  child: Text('next', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                 onPressed: (){
                   trip.description = _descriptionController.text;

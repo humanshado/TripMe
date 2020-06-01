@@ -29,14 +29,15 @@ class NewTripTitle extends StatelessWidget {
                controller: _titleController,
                style: TextStyle(fontSize: 20.0),
                autofocus: true,
+               textAlign: TextAlign.center,
              ),
            ),
            Column(
              mainAxisAlignment: MainAxisAlignment.spaceAround,
              children: <Widget>[
                RaisedButton(
-                 color: Colors.green,
-                 child: Text('next', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                 color: Colors.amber[800],
+                 child: Text('next', style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
                 onPressed: (){
                   trip.title = _titleController.text;
                   Navigator.push(context, MaterialPageRoute(
