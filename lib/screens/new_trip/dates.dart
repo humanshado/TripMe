@@ -121,8 +121,8 @@ class _NewTripDatesState extends State<NewTripDates> {
                   color: AppColors.oliveColor,
                   child: Text('next', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
                  onPressed: (){
-                   //trip.startDate = _startDate;
-                   //trip.endDate = _endDate;
+                   widget.trip.startDate = _startDate;
+                   widget.trip.endDate = _endDate;
                    Navigator.push(context, MaterialPageRoute(
                      builder: (context) => NewTripBudget(trip: widget.trip,))
                    );
